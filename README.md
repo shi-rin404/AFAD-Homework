@@ -21,7 +21,7 @@ It is matching with **"Adres mah adrese benzeyen sok havalı bir ap daire 31"**
 - Node.js
 
 ## Set Database
-NOTE: Replace your PostgreSQL version where **"postgres:17"**
+**NOTE:** Replace your PostgreSQL version where **"postgres:17"**
 ```
 docker run -d --name afad-postgres ^
   -e POSTGRES_DB=mydb ^
