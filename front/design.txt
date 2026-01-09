@@ -1,3 +1,0 @@
-- White background, it is a gradient slightly shifting to light gray
-- There is a logo image centered the page
-- A button with rounded edges with #2f78cc button color and white font color under the logo image
