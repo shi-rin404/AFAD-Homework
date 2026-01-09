@@ -1,0 +1,30 @@
+services:
+  db:
+    container_name: afad-postgres
+    image: postgres:17
+    environment:
+      POSTGRES_DB: mydb
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+    ports:
+      - "5432:5432"
+    volumes:
+      - afad_pgdata:/var/lib/postgresql/data
+
+  web:
+    container_name: afad-web
+    build: .
+    environment:
+      PORT: 3000
+      DATABASE_URL: postgresql://myuser:mypassword@db:5432/mydb
+      FRONT_PATH: /front
+    ports:
+      - "3000:3000"
+    volumes:
+      - ../front:/front:ro
+    depends_on:
+      - db
+
+volumes:
+  afad_pgdata:
+    external: true
