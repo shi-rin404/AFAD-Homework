@@ -1,0 +1,1 @@
+docker run --rm -it -v ${PWD}:/app -w /app node:25-alpine npm install express-rate-limit

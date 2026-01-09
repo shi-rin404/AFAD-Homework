@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AFAD | Adres Bildir</title>
+    <link rel="stylesheet" href="../style/main.css" />
+  </head>
+  <body>
+    <main class="hero">
+      <img class="logo" alt="Logo" src="../images/AFAD_logo.svg.png" />
+      <form class="form-container" action="/report" method="post">
+        <input type="text" name="first_name" placeholder="Ad" required />
+        <input type="text" name="last_name" placeholder="Soyad" required />
+        <textarea name="address" placeholder="Adres" required></textarea>
+        <div class="form-field">
+          <label class="form-label" for="last-contact"
+            >Son haber al&#305;nan zaman</label
+          >
+          <input
+            id="last-contact"
+            type="datetime-local"
+            name="last_contact"
+            placeholder="Son haber al&#305;nan zaman"
+            required
+          />
+        </div>
+        <button class="cta" type="submit">G&#246;nder</button>
+      </form>
+    </main>
+    <div
+      class="modal"
+      id="submit-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+    >
+      <div class="modal-card">
+        <p class="modal-title" id="submit-modal-title">G&#246;nderiliyor...</p>
+        <button class="cta" type="button" id="submit-modal-close">Kapat</button>
+      </div>
+    </div>
+    <script src="../scripts/form.js"></script>
+  </body>
+</html>
