@@ -20,6 +20,9 @@ It is matching with **"Adres mah adrese benzeyen sok havalı bir ap daire 31"**
 - PostgreSQL
 - Node.js
 
+## Root Folder for Docker
+The root folder is **"back"**
+
 ## Set Database
 **NOTE:** Replace your PostgreSQL version where **"postgres:17"**
 ```
