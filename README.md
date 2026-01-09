@@ -8,6 +8,7 @@ AFAD Address Reporting System re-implemented with duplicate address dropping fea
 ![3](https://github.com/user-attachments/assets/59bce3d7-2417-481a-8c2c-0b0c217f1abf)
 ## Duplicate Address Drop
 <img width="749" height="635" alt="7" src="https://github.com/user-attachments/assets/4b4cce48-c94f-4ae9-a8bf-a96258a31a8e" />
+
 It is matching with **"Adres mah adrese benzeyen sok havalı bir ap daire 31"**
 
 ## Similar Address Accepting
